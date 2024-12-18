@@ -11,10 +11,11 @@ This is an example of a network built with NetworkX Pyvis.
 
 ## Installation
 
-1) You will need a version of  Python3.9 installed on your linux operating system. Install pyenv to your linux operating system if
+You will need a version of  Python3.9 installed on your linux operating system. Install pyenv to your linux operating system if
 you need to install a virtual environment on Python3.9 and you run a newer version on your machine:
 
-A) For Linux (Ubuntu/Debian):
+## Installing Pyenv with a Python 3.9 environment
+1) For Linux (Ubuntu/Debian):
 ```bash
 sudo apt update
 sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
@@ -37,7 +38,7 @@ Then, restart your terminal or source the file:
 source ~/.bashrc  # or ~/.zshrc, ~/.bash_profile, depending on your shell
 ```
 
-B) Now, you can install Python 3.9 using pyenv:
+2) Now, you can install Python 3.9 using pyenv:
 ```bash
 pyenv install 3.9.10  # or any available 3.9.x version
 ```
@@ -47,7 +48,7 @@ This command will install the specified version of Python. You can check the ava
 pyenv install --list
 ```
 
-C) Set Python 3.9 as the Local Version:
+3) Set Python 3.9 as the Local Version:
 ```bash
 pyenv local 3.9.10  # or the version you installed
 ```
@@ -56,7 +57,7 @@ This sets the Python version only for the current directory (project folder). Yo
 pyenv global 3.9.10
 ```
 
-D) Now that Python 3.9 is installed, you can create a virtual environment with pyenv-virtualenv. If you don't have pyenv-virtualenv installed, you can install it by running:
+4) Now that Python 3.9 is installed, you can create a virtual environment with pyenv-virtualenv. If you don't have pyenv-virtualenv installed, you can install it by running:
 ```bash
 pyenv install pyenv-virtualenv
 ```
@@ -64,29 +65,31 @@ To create a virtual environment with Python 3.9, run:
 ```bash
 pyenv virtualenv 3.9.10 myenv
 ```
-E) To activate the newly created virtual environment, run:
+5) To activate the newly created virtual environment, run:
 ```bash
 pyenv activate myenv
 ```
 
-2) In the project folder, create a virtual 
+### Create a python virtual environment with the necessary packages 
+1) In the project folder, create a virtual 
 environment.
 
 ```bash
 python -m venv venv
 ```
 
-3) Activate the python virtual environment and install python modules from the 'requirements.txt' list.
+2) Activate the python virtual environment and install python modules from the 'requirements.txt' list.
 
 ```bash
 source venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-4) Use Jupyter lab/notebook to vizualize an detailed example of the script.
+3) Use Jupyter lab/notebook to vizualize an detailed example of the script.
 
 
 ## Next updates
 
 The goal is to change the form of the node depending on the sex of the bird, the color for alive birds and 
 directionality from parents to offspring using arrows.
+
