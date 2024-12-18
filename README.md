@@ -91,9 +91,9 @@ python -m pip install -r requirements.txt
 PyAGH is a MIT Licenced github project developped for calculating relashinship matrix using pedigree, genotype or microbiology data as well as for processing, analysis and visualization for data.
 More information at: https://github.com/zhaow-01/PyAGH
 ![example of a heatmap built with PyAGH](https://raw.githubusercontent.com/zhaow-01/PyAGH/main/picture/heat_example.png)
+PyAGH is used in this project for building relationship matrices. A notebook is available in ./notebooks/husbandry.ipynb
 ![example of a Pedigree Dendrogram built with PyAGH](https://raw.githubusercontent.com/zhaow-01/PyAGH/main/picture/cluster_example.png)
 
-PyAGH is used in this project for building relationship matrices. A notebook is available in ./notebooks/husbandry.ipynb
 ## Next updates
 
 The goal is to change the form of the node depending on the sex of the bird, the color for alive birds and 
