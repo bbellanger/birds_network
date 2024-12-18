@@ -11,7 +11,63 @@ This is an example of a network built with NetworkX Pyvis.
 
 ## Installation
 
-1) You will need Python3 installed on your linux operating system.
+1) You will need a version of  Python3.9 installed on your linux operating system. Install pyenv to your linux operating system if
+you need to install a virtual environment on Python3.9 and you run a newer version on your machine:
+
+A) For Linux (Ubuntu/Debian):
+```bash
+sudo apt update
+sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
+
+curl https://pyenv.run | bash
+```
+
+Make sure to add the following lines to your shell configuration file (e.g., .bashrc, .zshrc or .bash_profile) to initialize pyenv:
+```bash
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+
+Then, restart your terminal or source the file:
+```bash
+source ~/.bashrc  # or ~/.zshrc, ~/.bash_profile, depending on your shell
+```
+
+B) Now, you can install Python 3.9 using pyenv:
+```bash
+pyenv install 3.9.10  # or any available 3.9.x version
+```
+
+This command will install the specified version of Python. You can check the available Python versions by running:
+```bash
+pyenv install --list
+```
+
+C) Set Python 3.9 as the Local Version:
+```bash
+pyenv local 3.9.10  # or the version you installed
+```
+This sets the Python version only for the current directory (project folder). You can also set it globally (for all projects) by using:
+```bash
+pyenv global 3.9.10
+```
+
+D) Now that Python 3.9 is installed, you can create a virtual environment with pyenv-virtualenv. If you don't have pyenv-virtualenv installed, you can install it by running:
+```bash
+pyenv install pyenv-virtualenv
+```
+To create a virtual environment with Python 3.9, run:
+```bash
+pyenv virtualenv 3.9.10 myenv
+```
+E) To activate the newly created virtual environment, run:
+```bash
+pyenv activate myenv
+```
 
 2) In the project folder, create a virtual 
 environment.
@@ -28,6 +84,7 @@ python -m pip install -r requirements.txt
 ```
 
 4) Use Jupyter lab/notebook to vizualize an detailed example of the script.
+
 
 ## Next updates
 
