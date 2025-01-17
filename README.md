@@ -87,6 +87,19 @@ python -m pip install -r requirements.txt
 
 3) Use Jupyter lab/notebook to vizualize an detailed example of the script.
 
+## Scripts
+A) Output a sum_up of selected birds and a mastersheet of the colony.
+1) Change the content of the input lis in "./input/list_input.csv".
+
+2) Run the following:
+```bash
+source venv/bin/activate
+cd scripts/
+python pedegree_sumup.py
+```
+
+3) Retrieve your .csv files in "./output".
+
 ### Kinship analysis with PyAGH
 PyAGH is a MIT Licenced github project developped for calculating relashinship matrix using pedigree, genotype or microbiology data as well as for processing, analysis and visualization for data.
 More information at: https://github.com/zhaow-01/PyAGH
