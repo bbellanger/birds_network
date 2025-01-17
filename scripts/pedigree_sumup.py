@@ -130,3 +130,24 @@ selected_rows['k_score'] = selected_rows.apply(k_score, axis=1)
 # EXPORT TABLE AS CSV
 master.to_csv("../output/master.csv")
 selected_rows.to_csv("../output/selected_birds.csv")
+
+# GENERATES HEATMAP AND CLUSTER FOR SELECTED BIRDS
+list_of_birds = []
+
+for index, row in selected_rows.iterrows():
+    bird = row['name']
+    list_of_birds.append(bird)
+
+ped_selected = PyAGH.selectPed(data=ped, id=list_of_birds, generation=2) # Print X generations of the chosen bird
+ped_selected = PyAGH.sortPed(ped_selected)
+
+sort_ped = PyAGH.sortPed(ped_selected) # Sort the pedigree first
+A = PyAGH.makeA(sort_ped)
+
+cluster_example = PyAGH.cluster(A)
+plt.xticks(rotation=90)
+plt.savefig('../output/cluster_selected_birds.png', facecolor='w', dpi=300)
+
+heatmap_example = PyAGH.heat(A)
+plt.xticks(rotation=90)
+plt.savefig('../output/heatmap_selected_birds.png', facecolor='w',dpi=500)
