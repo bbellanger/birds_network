@@ -1,4 +1,4 @@
-# README file
+m# README file
 
 ## Birds network: quick description
 
@@ -89,7 +89,7 @@ python -m pip install -r requirements.txt
 
 ## Scripts
 A) Output a sum_up of selected birds and a mastersheet of the colony.
-1) Change the content of the input lis in "./input/list_input.csv".
+1) Change the content of the input list in "./input/list_input.csv".
 
 2) Run the following:
 ```bash
