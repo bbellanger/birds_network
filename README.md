@@ -98,7 +98,12 @@ cd scripts/
 python pedigree_sumup.py
 ```
 
-3) Retrieve your .csv files in "./output".
+3) Deactivate the virtual envirnment.
+```bash
+deactivate
+```
+
+4) Retrieve your .csv files in "./output".
 
 ### Kinship analysis with PyAGH
 PyAGH is a MIT Licenced github project developped for calculating relashinship matrix using pedigree, genotype or microbiology data as well as for processing, analysis and visualization for data.
