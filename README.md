@@ -95,7 +95,7 @@ A) Output a sum_up of selected birds and a mastersheet of the colony.
 ```bash
 source venv/bin/activate
 cd scripts/
-python pedegree_sumup.py
+python pedigree_sumup.py
 ```
 
 3) Retrieve your .csv files in "./output".
