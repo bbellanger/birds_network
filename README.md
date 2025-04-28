@@ -87,6 +87,15 @@ python -m pip install -r requirements.txt
 
 3) Use Jupyter lab/notebook to vizualize an detailed example of the script.
 
+4) Troublshooting
+If you are hitting this error:
+`pygraphviz/graphviz_wrap.c:3020:10: fatal error: graphviz/cgraph.h: No such file or directory` it means that pygraphviz can't find the Graphviz development libraries (headers like `cgraph.h`) during installation. To fix it on Ubuntu/Debian:
+You need to install the Graphviz development package:
+```bash
+sudo apt-get update
+sudo apt-get install graphviz graphviz-dev
+```
+
 ## Scripts
 A) Output a sum_up of selected birds and a mastersheet of the colony.
 1) Change the content of the input list in "./input/list_input.csv".
